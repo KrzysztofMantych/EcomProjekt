@@ -19,7 +19,7 @@ namespace Projekt
             GetExtendedJSON();
         }
 
-        public async void GetExtendedJSON()
+        private async void GetExtendedJSON()
         {
             if (NetworkCheck.IsInternet())
             {

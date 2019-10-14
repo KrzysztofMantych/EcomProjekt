@@ -19,7 +19,7 @@ namespace Projekt
             GetBasicJSON();
         }
 
-        public async void GetBasicJSON()
+        private async void GetBasicJSON()
         {
             if (NetworkCheck.IsInternet())
             {

@@ -13,9 +13,6 @@ namespace UnitTestProject
             bool expectedValue = true;
             bool actualResult = NetworkCheck.IsInternet();
             Assert.AreEqual(expectedValue, actualResult);
-            
-
-
         }
     }
 }
