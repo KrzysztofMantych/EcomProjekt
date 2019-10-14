@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Projekt.DetailPage">
+    <Grid>
+
+        <Label x:Name="Test" Text="Contact Details:" FontSize="25" HorizontalOptions="StartAndExpand" Grid.Row="0" FontAttributes="Bold"/>
+
+        <Grid x:Name="GridDetails" VerticalOptions="Center" HorizontalOptions="Center" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="ID:" HorizontalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0" Margin="20" FontAttributes="Bold" IsVisible="False"/>
+            <Label Text="{Binding Id}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Grid.Row="0" Grid.Column="1" TextColor="Blue"  FontAttributes="Bold" IsVisible="False"/>
+
+            <Label Text="First Name:" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0" Margin="20" FontAttributes="Bold"/>
+            <Label Text="{Binding FirstName}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="1" TextColor="Orange"  FontAttributes="Bold"/>
+
+            <Label Text="Last Name:" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0"  Margin="20" FontAttributes="Bold"/>
+            <Label Text="{Binding LastName}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="2" TextColor="Gray"  FontAttributes="Bold"/>
+
+            <Label Text="Age:" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="0"  Margin="20" FontAttributes="Bold"/>
+            <Label Text="{Binding Age}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="3" TextColor="Red"  FontAttributes="Bold"/>
+
+            <Label Text="City:" HorizontalOptions="StartAndExpand" Grid.Row="4" Grid.Column="0"  Margin="20" FontAttributes="Bold"/>
+            <Label Text="{Binding City}" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Grid.Column="1" Grid.Row="4" TextColor="Black"  FontAttributes="Bold"/>
+        </Grid>
+
+    </Grid>
+</ContentPage>

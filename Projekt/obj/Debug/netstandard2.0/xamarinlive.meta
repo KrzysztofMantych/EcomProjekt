@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <XamlFileMeta>
+      <FilePath>C:\Users\kmant\Desktop\Backup\Projekt\Projekt\App.xaml</FilePath>
+      <Hash>9D-A4-41-2D-FE-CD-F2-F5-AE-71-4C-26-BD-7F-E7-99</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\kmant\Desktop\Backup\Projekt\Projekt\View\DetailPage.xaml</FilePath>
+      <Hash>92-B3-11-E4-DB-AB-FD-A2-36-EE-A5-AD-64-C7-24-4C</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\kmant\Desktop\Backup\Projekt\Projekt\View\MainPage.xaml</FilePath>
+      <Hash>DC-C1-81-2E-62-D0-4B-D7-91-50-DA-32-37-B0-AC-11</Hash>
+      <Properties />
+    </XamlFileMeta>
+  </Files>
+</XamlProjectMeta>

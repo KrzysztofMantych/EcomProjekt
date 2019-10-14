@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Projekt.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Find by Name" x:Name="LabelOne" FontSize="Medium"/>
+        <SearchBar TextChanged="search_one_TextChanged" x:Name="search_one">
+        </SearchBar>
+        <Label Text="Find by Surname" x:Name="LabelTwo" FontSize="Medium"/>
+        <SearchBar TextChanged="search_two_TextChanged" x:Name="search_two">
+        </SearchBar>
+        <Label Text="List of Users" x:Name="LabelThree" 
+               HorizontalTextAlignment="Center"
+               FontSize="Large"
+               />
+        <ListView x:Name="ListOfUsers" CachingStrategy="RecycleElement" Grid.Row="1" HorizontalOptions="FillAndExpand" HasUnevenRows="True" ItemTapped="ListOfUsers_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid HorizontalOptions="FillAndExpand" Padding="10">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label Text="{Binding Id}" HorizontalOptions="StartAndExpand" Grid.Row="0"  FontAttributes="Bold" IsVisible="False"/>
+                            <Label Text="{Binding FirstName}" HorizontalOptions="StartAndExpand" Grid.Row="1"  FontAttributes="Bold"/>
+                            <Label Text="{Binding LastName}" HorizontalOptions="StartAndExpand" Grid.Row="2"  FontAttributes="Bold"/>
+                            <BoxView HeightRequest="2" Margin="0,10,10,0" BackgroundColor="Gray" Grid.Row="3" HorizontalOptions="FillAndExpand" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
